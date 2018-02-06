@@ -1,12 +1,12 @@
 # Project-1-ML-Street-Walking-Speed
 
-#Project Objective
+Project Objective
 
 
-#Learning Goals
+Learning Goals
 
 
-#Stages
+Stages
 
-#1
+1
 
