@@ -29,6 +29,12 @@ Stages:
  After the proof of concept I felt I was ready to build the model that will be later attached to security camera feed to measure walking speed. I went out and gathered approximately 260 images to be used for the training. I also tried very hard to configure my gpu to accept training the model, but ultimately gave up and resigned myself to my cpu as the errors in the terminal mounted. 
     
     
-    
+3). Configuring the Model to security Feed
+
+4). Speed Calculations
+
+5). Data Gathering
+
+6). Data Visualization
     
     
