@@ -16,7 +16,7 @@ I have a few learning goals I hope to accomplish by the end of the project.
 
 ## Stages:
 
-Completed
+Here is a list of the completed stages of the project, as I think there will be a lot of tinkering with the final version to improve accuracy and speed.
 
 - [X] 1 Object Detectiong Proof of concept
 - [ ] 2 Training the "Target Acquired Model"
