@@ -16,6 +16,15 @@ I have a few learning goals I hope to accomplish by the end of the project.
 
 ## Stages:
 
+Completed
+
+[X] 1 Object Detectiong Proof of concept
+[ ] 2 Training the "Target Acquired Model"
+[ ] 3 Configuring the Model to security Feed
+[ ] 4 Speed Calculations
+[ ] 5 Data Gathering
+[ ] 6 Data Visualization
+
 1). Object Detection Proof of concept.
 
  One of the first stagres of this project is a simple proof of concept to get me introduced to tensorflow object detection software. I wanted to create and model an object to gain experience before fully diving into building this projects model.For my proof of concept model I wanted a model that would be somewhat easy to recognize, somewhat easy to find pictures for, and finally something that I could use everyday.
