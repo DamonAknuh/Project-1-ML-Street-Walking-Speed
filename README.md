@@ -1,20 +1,20 @@
 # Project-1-ML-Street-Walking-Speed
 
-##Project Objective
+## Project Objective
 
 The objective of this project is to use an open source object recognition API such as tensorflow to gather, and compare walking                 speeds from various international cities.
 
-##Learning Goals:
+## Learning Goals:
 I have a few learning goals I hope to accomplish by the end of the project.
 
-*Familiarity with Tensorflow-Object_Detection
-*Familiarity with OpenCV computer vision systems
-*Intoduction to Python programming
-*Introduction to Data science
-*Visualizing and Organizing data
+* Familiarity with Tensorflow-Object_Detection
+* Familiarity with OpenCV computer vision systems
+* Intoduction to Python programming
+* Introduction to Data science
+* Visualizing and Organizing data
 
 
-##Stages:
+## Stages:
 
 1). Object Detection Proof of concept.
 
