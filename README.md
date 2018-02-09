@@ -2,7 +2,7 @@
 
 ## Project Objective
 
-The objective of this project is to use an open source object recognition API such as tensorflow to gather, and compare walking                 speeds from various international cities.
+The objective of this project is to measure track and record the speed of a human walking accross a security cameras feed. I hope to use this data to compare walking speeds of people from cities accross the world. I will use python, OpenCV, and tensorflow-Object_detection to accomplish this. 
 
 ## Learning Goals:
 I have a few learning goals I hope to accomplish by the end of the project.
