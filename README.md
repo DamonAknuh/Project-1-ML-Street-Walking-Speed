@@ -18,12 +18,12 @@ I have a few learning goals I hope to accomplish by the end of the project.
 
 Completed
 
-[X] 1 Object Detectiong Proof of concept
-[ ] 2 Training the "Target Acquired Model"
-[ ] 3 Configuring the Model to security Feed
-[ ] 4 Speed Calculations
-[ ] 5 Data Gathering
-[ ] 6 Data Visualization
+- [X] 1 Object Detectiong Proof of concept
+- [ ] 2 Training the "Target Acquired Model"
+- [ ] 3 Configuring the Model to security Feed
+- [ ] 4 Speed Calculations
+- [ ] 5 Data Gathering
+- [ ] 6 Data Visualization
 
 1). Object Detection Proof of concept.
 
