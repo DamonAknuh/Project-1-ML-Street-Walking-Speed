@@ -50,7 +50,8 @@ Here is a list of the completed stages of the project, as I think there will be 
  ![trainingmodel](https://user-images.githubusercontent.com/36031736/36137912-dccb3ef0-10c9-11e8-8898-ce02db12cf77.png)
  This picture is of the training process at around ~25000 steps. After a total training time of a day and a half.
  
- 
+ ![total loss](https://user-images.githubusercontent.com/36031736/36138060-83028080-10ca-11e8-876c-57f5affb4693.png)
+ This picture shows the graph of the total loss of the model over time. An ideal model will have a loss under 1. Unfortunately I do not think this model will get close to 1.
  
  
     
