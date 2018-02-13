@@ -53,10 +53,11 @@ Here is a list of the completed stages of the project, as I think there will be 
 In this stage I have to configure the tensorflow API to capture continuos screen images of my desktop instead of previously just my video camera. I utilized pyautogui with the help of a few tutorials (Links below) to accomplish this task. Creating a continuous capture of a region of my screen. Too have the object detection run on the footage, all I have to do is drag the footage in the browser to the region of my screen being captured. 
 
 
+This is a pciture illustrating the model setup. The left window is a live feed from http://www.opentopia.com/webcam/16031,
+the right window is an openCV window showing the object detection, and FPS count. 
 
 
-![frameratecap](https://user-images.githubusercontent.com/36031736/36137337-50843aca-10c7-11e8-9ecf-8b7edafa2c40.png)
-Here is an image of the capturing working. A big problem is the low FPS of this setup. In the future I will hopefully address this.
+
 
 tutorial links:
 https://www.pyimagesearch.com/2018/01/01/taking-screenshots-with-opencv-and-python/
