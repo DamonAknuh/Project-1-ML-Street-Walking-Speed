@@ -21,6 +21,9 @@ https://www.tensorflow.org/get_started/get_started_for_beginners
 Sentdex Youtube Python/MachineLearning/Tensorflow Video Tutorials
 https://www.youtube.com/user/sentdex/videos
 
+OpenCV object Tracking:
+https://www.learnopencv.com/object-tracking-using-opencv-cpp-python/
+
 ## Stages:
 
 Here is a list of the completed stages of the project, as I think there will be a lot of tinkering with the final version to improve accuracy and speed.
