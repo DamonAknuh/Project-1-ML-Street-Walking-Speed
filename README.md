@@ -52,7 +52,7 @@ This picture shows the training process at around ~25,000 steps. With an average
 
 
 ![total loss](https://user-images.githubusercontent.com/36031736/36138060-83028080-10ca-11e8-876c-57f5affb4693.png)
-This picture shows the graph of the total loss of the model over time. An ideal model will have a loss under 1. Unfortunately I do not think this model will get close to 1.
+This picture shows the graph of the total loss of the model over time at around 4,000 steps. An ideal model will have a loss under 1. Unfortunately I do not think this model will get close to 1.
  
  
     
