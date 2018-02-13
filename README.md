@@ -46,7 +46,15 @@ Here is a list of the completed stages of the project, as I think there will be 
 #### 2). Training the "Target Acquired Model"
 
  After the proof of concept I felt I was ready to build the model that will be later attached to security camera feed to measure walking speed. I went out and gathered approximately 260 images to be used for the training. I also tried very hard to configure my gpu to accept training the model, but ultimately gave up and resigned myself to my cpu as the errors in the terminal mounted. 
+ 
+ ![trainingmodel](https://user-images.githubusercontent.com/36031736/36137912-dccb3ef0-10c9-11e8-8898-ce02db12cf77.png)
+ This picture is of the training process at around ~25000 steps. After a total training time of a day and a half.
+ 
+ 
+ 
+ 
     
+
     
 #### 3). Configuring the Model to security Feed
 
