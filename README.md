@@ -16,6 +16,7 @@ I have a few learning goals I hope to accomplish by the end of the project.
 
 Tensorflow starting Guide:
 https://www.tensorflow.org/get_started/get_started_for_beginners
+
 Sentdex Youtube Python/MachineLearning/Tensorflow Video Tutorials
 https://www.youtube.com/user/sentdex/videos
 
