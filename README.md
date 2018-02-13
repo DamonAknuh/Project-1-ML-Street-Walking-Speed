@@ -65,7 +65,7 @@ In this stage I have to configure the tensorflow API to capture continuos screen
 
 ![setup](https://user-images.githubusercontent.com/36031736/36137783-4fc789a0-10c9-11e8-814a-bd863d1f96e9.png)
 This is a picture illustrating the camera setup. The left window is a live feed from http://www.opentopia.com/webcam/16031,
-the right window is where the object detection is ran on the screenshotted region of the left window.  
+the right window shows the object detection being ran on the left window region.  
 
 
 
