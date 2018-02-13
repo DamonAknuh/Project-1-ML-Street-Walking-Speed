@@ -12,7 +12,12 @@ I have a few learning goals I hope to accomplish by the end of the project.
 * Intoduction to Python programming
 * Introduction to Data science
 * Visualizing and Organizing data
+##Tutorials:
 
+Tensorflow starting Guide:
+https://www.tensorflow.org/get_started/get_started_for_beginners
+Sentdex Youtube Python/MachineLearning/Tensorflow Video Tutorials
+https://www.youtube.com/user/sentdex/videos
 
 ## Stages:
 
