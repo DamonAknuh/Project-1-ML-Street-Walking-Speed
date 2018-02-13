@@ -47,11 +47,12 @@ Here is a list of the completed stages of the project, as I think there will be 
 
  After the proof of concept I felt I was ready to build the model that will be later attached to security camera feed to measure walking speed. I went out and gathered approximately 260 images to be used for the training. I also tried very hard to configure my gpu to accept training the model, but ultimately gave up and resigned myself to my cpu as the errors in the terminal mounted. 
  
- ![trainingmodel](https://user-images.githubusercontent.com/36031736/36137912-dccb3ef0-10c9-11e8-8898-ce02db12cf77.png)
- This picture is of the training process at around ~25000 steps. After a total training time of a day and a half.
- 
- ![total loss](https://user-images.githubusercontent.com/36031736/36138060-83028080-10ca-11e8-876c-57f5affb4693.png)
- This picture shows the graph of the total loss of the model over time. An ideal model will have a loss under 1. Unfortunately I do not think this model will get close to 1.
+![setup2](https://user-images.githubusercontent.com/36031736/36138225-15b276b0-10cb-11e8-8ae7-2acd0d7707e5.png)
+This picture shows the training process at around ~25,000 steps. With an average total loss hovering at around 2.3.
+
+
+![total loss](https://user-images.githubusercontent.com/36031736/36138060-83028080-10ca-11e8-876c-57f5affb4693.png)
+This picture shows the graph of the total loss of the model over time. An ideal model will have a loss under 1. Unfortunately I do not think this model will get close to 1.
  
  
     
