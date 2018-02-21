@@ -31,7 +31,7 @@ Here is a list of the completed stages of the project, as I think there will be 
 - [X] 1 Object Detectiong Proof of concept
 - [X] 2 Training the "Target Acquired Model"
 - [X] 3 Configuring the Model to security Feed
-- [ ] 4 Speed Calculations
+- [X] 4 Speed Calculations
 - [ ] 5 Data Gathering
 - [ ] 6 Data Visualization
 
@@ -85,6 +85,25 @@ https://www.pyimagesearch.com/2018/01/01/taking-screenshots-with-opencv-and-pyth
 http://pyautogui.readthedocs.io/en/latest/screenshot.html
 
 #### 4). Speed Calculations
+This is going to be the hardest of the part of the project. Calculating the speed of the object is an easy enough task just when considering a 2 demension object moving accross the screen for a set time. In this project it is going to be very far than 2 demension. 
+
+For example if you have one person walking down the street you have to factor in the perspective of the camera. As the person walks farther and farther the distance that he travels in person is the same but from a 2d demensional point of view he is moving less and less. 
+
+One of the main challengs going forward to measure the speed of a walking person in real time will be to make sure that we factor in the cameras perspective when doing the distance measurements. Simply, as a man walks further he should not be going slower because of the cameras perspective.
+
+##### Psuedocode:
+```
+for each detection    
+  if target_acquired detected  
+    if confidence >= 60%  
+       calculate middle point x and y of detection  
+       if same object is around the same point as last time  
+         calculate distorted mapped distance of old and new  
+         calculate calibarated distance by K constant  
+         calculate speed  
+         display speed  
+       store the mid points of the detection 
+```
 
 #### 5). Data Gathering
 
