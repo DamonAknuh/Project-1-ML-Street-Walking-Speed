@@ -104,9 +104,14 @@ for each detection
          display speed  
        store the mid points of the detection 
 ```
+![screenshotspeed1](https://user-images.githubusercontent.com/36031736/36472496-9838f4a6-1724-11e8-91e2-f000e20d2f7a.png)
 This image showcases the out-put text on the screen and the avg speed finding function
 
+
+
+![screenshotwalking2](https://user-images.githubusercontent.com/36031736/36472498-9afb74ca-1724-11e8-9950-34f69ae24cb9.png)
 This image showcases the same, but you can see between the two images the avg speed has gone down, and the 
+
 #### 5). Data Gathering
 
 #### 6). Data Visualization
