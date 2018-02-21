@@ -104,7 +104,9 @@ for each detection
          display speed  
        store the mid points of the detection 
 ```
+This image showcases the out-put text on the screen and the avg speed finding function
 
+This image showcases the same, but you can see between the two images the avg speed has gone down, and the 
 #### 5). Data Gathering
 
 #### 6). Data Visualization
