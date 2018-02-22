@@ -49,19 +49,21 @@ Here is a list of the completed stages of the project, as I think there will be 
 
 #### 2). Training the "Target Acquired Model"
 
- After the proof of concept I felt I was ready to build the model that will be later attached to security camera feed to measure walking speed. I went out and gathered approximately 260 images to be used for the training. I also tried very hard to configure my gpu to accept training the model, but ultimately gave up and resigned myself to my cpu as the errors in the terminal mounted. 
+ After the proof of concept I felt ready to build the final project model that will be later attached to the screen. For this model I have gathered approximately 260 image for training use. I also tried very hard to configure my GPU to accept training the model, but ultimately gave up and resigned myself to my using my CPU as I ran out of space on my Ubuntu partition.
+ 
+ The total training time for this model was around 4 days with ~50000 steps. I halved the training batch size for this model, and I believe that is what caused a much longer training time than before. I was aiming to bring the total loss down below 2, but I think after 4 days I settled for a loss of 2.03. In the end I don't think this had a huge impact on the accuracy of the model.
  
 ![setup2](https://user-images.githubusercontent.com/36031736/36138225-15b276b0-10cb-11e8-8ae7-2acd0d7707e5.png)
 This picture shows the training process at around ~25,000 steps. With an average total loss hovering at around 2.3.
 
 
 ![total loss](https://user-images.githubusercontent.com/36031736/36138060-83028080-10ca-11e8-876c-57f5affb4693.png)
-This picture shows the graph of the total loss of the model over time at around 4,000 steps. An ideal model will have a loss under 1. Unfortunately I do not think this model will get close to 1.
+This picture shows the tensorboard graph of the total loss of the model at around 4,000 steps. An ideal model will have a loss under 1. For this model after 46000 more steps I settled for a loss of 2.03
  
  
 ![modelverified](https://user-images.githubusercontent.com/36031736/36290640-ec6d3f30-12f8-11e8-92e7-8729d9262ff7.png)
 This is the final model configured. It detects people walking and labels them with green boxes and a "Target Acquired Text"
-    
+
 
     
 #### 3). Configuring the Model to security Feed
