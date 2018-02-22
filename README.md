@@ -2,12 +2,13 @@
 
 ## Project Objective
 
-The objective of this project is to measure track and record the speed of a human walking accross a security cameras feed. I hope to use this data to compare walking speeds of people from cities accross the world. I will use python, OpenCV, and Tensorflows Object_detection as the main building blocks of the project. 
+The objective of this project is too detect a person walking in a video and measure/track the walking speed.  I will use python, OpenCV, and Tensorflows Object_detection as the main building blocks of the project. Python will act as the main programming language of my code. The Tensorflow API will provide a convenient object detection in which I will need to train a human model for the program to track. OpenCV will be used mostly for displaying and working with the image formats, reading images from the screen, displaying, passing data, etc... 
 
 ## Learning Goals:
 I have a few learning goals I hope to accomplish by the end of the project.
 
-* Familiarity with Tensorflow-Object_Detection
+* Familiarity with Working with Tensorflow Object Detection Code
+* Training and building new object detection models
 * Familiarity with OpenCV computer vision systems
 * Familiarity with Python programming
 
@@ -35,14 +36,15 @@ Here is a list of the completed stages of the project, as I think there will be 
 
 #### 1). Object Detection Proof of concept.
 
- One of the first stagres of this project is a simple proof of concept to get me introduced to tensorflow object detection software. I wanted to create and model an object to gain experience before fully diving into building this projects model.For my proof of concept model I wanted a model that would be somewhat easy to recognize, somewhat easy to find pictures for, and finally something that I could use everyday.
+ One of the first stages of this project is a simple proof of concept to get me introduced to building object detection models. The point of this stage is too gain experience building a model first and iron out issues before committing computation time to the project-model. I decided to build a model for recognizing the middle finger sign. I did this for a number of reasons the first being that there is a plethora of pictures for training, and secondly because I thought it would be very interesting to see working. 
 
- For this purpose my chosen object is the vulgar middle finger gesture. I then set about gathering images for training the model. In the end I found about 105 total images for the final training model. Which was in the low end for the suggested range of 100-300 images. Training with my cpu took around ~12hours, and I stopped the model training process with an average total lost at 1.2. After configuring the model into the final setup, and hooking the model up to a live feed from my laptop camera I had a middle finger detector setup directly on my laptop as shown below
+  I then set about gathering images for training the model. In the end I found about 105 total images for the model training, and 10 additional images for validation.  Training models should have ideally more than 100 images, and so I was in the low end for training data. After gathering the training data and before training you must label the middle finger in all the images and generate the tf.records. Training ~10000 steps with my CPU and around ~12hours. I stopped the model training process at an average total lost of 1.2. After training the model all that is left is configuring it with some tensorflow code (object_detection_tutorial.py) to detect objects from the webcam instead of image files. Then you have a full fledge middle finger detecting program right in your computer
  
  ![img-4891](https://user-images.githubusercontent.com/36031736/36290636-e6001000-12f8-11e8-9004-892dac6521c6.jpg)
+ Middle Finger Detector program. Can see the highlighted detected object and threshold value for the programs confidence in the detected object. 
 
     
- This model was far from perfect. It had a lot of trouble recognizing every gesture that was made on the screen, and seem quite finnicky in the recognition. It also would not recognize the gesture at a lateral angle. For the next model I will use a larger pool of training data, and a longer training time in order to rectify errors seen with this model. Also possibly configuring a gpu to the training of the model could greatly inhance training time.
+ This model was far from perfect. It had a lot of trouble recognizing every gesture that was made on the screen, and seemed quite finnicky in the recognition. It also would not recognize the gesture at a lateral angle even with its training data. For the next model I will use a larger pool of training data, and a longer training time in order to hopefully build a more accurate model. Also configuring a GPU for the training process will greatly reduce the overall time of each step.
  
 
 #### 2). Training the "Target Acquired Model"
