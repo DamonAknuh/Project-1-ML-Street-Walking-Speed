@@ -2,16 +2,15 @@
 
 ## Project Objective
 
-The objective of this project is to measure track and record the speed of a human walking accross a security cameras feed. I hope to use this data to compare walking speeds of people from cities accross the world. I will use python, OpenCV, and tensorflow-Object_detection to accomplish this. 
+The objective of this project is to measure track and record the speed of a human walking accross a security cameras feed. I hope to use this data to compare walking speeds of people from cities accross the world. I will use python, OpenCV, and Tensorflows Object_detection as the main building blocks of the project. 
 
 ## Learning Goals:
 I have a few learning goals I hope to accomplish by the end of the project.
 
 * Familiarity with Tensorflow-Object_Detection
 * Familiarity with OpenCV computer vision systems
-* Intoduction to Python programming
-* Introduction to Data science
-* Visualizing and Organizing data
+* Familiarity with Python programming
+
 
 ## Tutorials:
 
@@ -31,9 +30,8 @@ Here is a list of the completed stages of the project, as I think there will be 
 - [X] 1 Object Detectiong Proof of concept
 - [X] 2 Training the "Target Acquired Model"
 - [X] 3 Configuring the Model to security Feed
-- [X] 4 Speed Calculations
-- [ ] 5 Data Gathering
-- [ ] 6 Data Visualization
+- [X] 4 Walking speed calculations
+- [X] 5 Walking speed code implementation
 
 #### 1). Object Detection Proof of concept.
 
@@ -84,12 +82,14 @@ tutorial links:
 https://www.pyimagesearch.com/2018/01/01/taking-screenshots-with-opencv-and-python/
 http://pyautogui.readthedocs.io/en/latest/screenshot.html
 
-#### 4). Speed Calculations
+#### 4). Walking speed calculations
 This is going to be the hardest of the part of the project. Calculating the speed of the object is an easy enough task just when considering a 2 demension object moving accross the screen for a set time. In this project it is going to be very far than 2 demension. 
 
 For example if you have one person walking down the street you have to factor in the perspective of the camera. As the person walks farther and farther the distance that he travels in person is the same but from a 2d demensional point of view he is moving less and less. 
 
 One of the main challengs going forward to measure the speed of a walking person in real time will be to make sure that we factor in the cameras perspective when doing the distance measurements. Simply, as a man walks further he should not be going slower because of the cameras perspective.
+#### 5). Walking Speed Code Implementation
+
 
 ##### Psuedocode:
 ```
@@ -107,13 +107,10 @@ for each detection
 ![screenshotspeed1](https://user-images.githubusercontent.com/36031736/36472496-9838f4a6-1724-11e8-91e2-f000e20d2f7a.png)
 This image showcases the out-put text on the screen and the avg speed finding function
 
-
-
 ![screenshotwalking2](https://user-images.githubusercontent.com/36031736/36472498-9afb74ca-1724-11e8-9950-34f69ae24cb9.png)
 This image showcases the same, but you can see between the two images the avg speed has gone down, and the 
 
-#### 5). Data Gathering
+## Conclusion:
 
-#### 6). Data Visualization
-    
+This project is now fully able to detect and track the speed of a person walking accross the computer screen. The speed tracking gives a pretty close value to the avg walking speed of 2.8 kmph. Additionally, the calibration method that I used to account for the camera perspective could use additional tickering beyond the scope of the project I set out to make. Factors like depth of scope, lens distortion, and truncation can all lead to problems in my final working code. In the future I will probably return to this project to tinker and rework the calibration to provide further accuracy in the model. 
     
