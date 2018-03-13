@@ -87,11 +87,30 @@ https://www.pyimagesearch.com/2018/01/01/taking-screenshots-with-opencv-and-pyth
 http://pyautogui.readthedocs.io/en/latest/screenshot.html
 
 #### 4). Walking speed calculations
-This is going to be the hardest of the part of the project. Calculating the speed of the object is an easy enough task just when considering a 2 demension object moving accross the screen for a set time. In this project it is going to be very far than 2 demension. 
 
-For example if you have one person walking down the street you have to factor in the perspective of the camera. As the person walks farther and farther the distance that he travels in person is the same but from a 2d demensional point of view he is moving less and less. 
+This is going to be the hardest of the part of the project. Calculating the speed of the object is an easy task when working in 2 demensions. In 3 demensions the task becomes harder to image, as the perspect shifts and a new plane must be accounted for. As a person walks down a street the program will read a ever decreasing pixel distance, but he will most likely be going the same speed. The challenge in this code is find a way of implementing this perspective so the camera can factor this decreasing movement in. 
 
-One of the main challengs going forward to measure the speed of a walking person in real time will be to make sure that we factor in the cameras perspective when doing the distance measurements. Simply, as a man walks further he should not be going slower because of the cameras perspective.
+One of the ways I first thought of ways mapping the pixels x and y coordinates and creating a 3D surface function that could provide some weight information and help provide a better measurement. 
+
+
+
+![eq1](https://user-images.githubusercontent.com/36031736/37326859-952b8ac4-26c6-11e8-9d7b-92eb31808995.JPG)
+
+Above is the equation for the Z value of the surface. This value is calculated form the x and y coordinates of the center of the targeted box. This calculation also uses the coordinates, in i and j, of the vanishing point of the scene. This vanishing point must be changed for every new scene by the developer.  
+
+![eq2](https://user-images.githubusercontent.com/36031736/37326860-9584091a-26c6-11e8-912b-f354197e048f.JPG)  
+
+This formula is used to determine the weighted difference based on perspective. It should be able to appoximate the actual speed of a walked pretty well. It takes into account the additional plane of the scene, but a lot of testing is needed to determine the actually accuracy of this entire approach. 
+
+![eq3](https://user-images.githubusercontent.com/36031736/37326861-95b6bfa4-26c6-11e8-9296-8e7a62b9e950.JPG)  
+This final equation is used to convert out of pixels and into a real world measurement like meters or millimeters. The K constant is calculated by measuring the pixel width of an object in the screen that you know the real world width of. Thus you can relate the pixel distances to real world mesaurements using the K value. 
+
+![graph1](https://user-images.githubusercontent.com/36031736/37327577-7f0b4c7c-26c9-11e8-979a-353e6744ec24.JPG)
+This graph demostrates the theory in my mind behind my approach. I'm trying to map 2D coordinates to a 3D plane. so you can weight the maping so that the closer you get to the Vanishing Ppint the farther the distance is of the points because it has this Z Value
+
+
+
+
 #### 5). Walking Speed Code Implementation
 
 
