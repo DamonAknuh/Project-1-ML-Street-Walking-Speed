@@ -109,6 +109,8 @@ This final equation is used to convert out of pixels and into a real world measu
 This graph demostrates the theory in my mind behind my approach. I'm trying to map 2D coordinates to a 3D plane. so you can weight the maping so that the closer you get to the Vanishing Ppint the farther the distance is of the points because it has this Z Value
 
 
+![graph2](https://user-images.githubusercontent.com/36031736/37327771-3690a626-26ca-11e8-977c-f2eb30be6c98.JPG)
+This picture gives a better perspective of the surface shape and function. 
 
 
 #### 5). Walking Speed Code Implementation
