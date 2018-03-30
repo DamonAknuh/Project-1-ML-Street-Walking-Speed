@@ -65,7 +65,7 @@ This picture shows the tensorboard graph of the total loss of the model at aroun
 This is the final model configured. It detects people walking and labels them with green boxes and a "Target Acquired Text"
 
 
-    
+   
 #### 3). Configuring the Model to security Feed
 
 In this stage I have to configure the tensorflow API to capture continuos screen images of my desktop instead of previously just my video camera. I utilized pyautogui with the help of a few tutorials (Links below) to accomplish this task. Creating a continuous capture of a region of my screen. Too have the object detection run on the footage, all I have to do is drag the footage in the browser to the region of my screen being captured. 
